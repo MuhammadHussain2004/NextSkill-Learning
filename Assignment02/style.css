@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+body {
+  background: #353543;
+}
+
+/* navbar */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  background-color: #272832;
+}
+
+.nav-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-icon img {
+  height: 20px;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  align-items: flex-end;
+}
+
+.hamburger span {
+  display: block;
+  height: 2px;
+  background: white;
+}
+
+.hamburger span:nth-child(1) { width: 18px; }
+.hamburger span:nth-child(2) { width: 12px; }
+.hamburger span:nth-child(3) { width: 18px; }
+
+/* SLIDER */
+#toggle {
+  display: none;
+}
+
+.slider {
+  display: none;
+  flex-direction: column;
+  background-color: #23232a;
+  width: 100%;
+}
+
+#toggle:checked ~ .slider {
+  display: flex;
+}
+
+.slider span {
+  color: #70708b;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.slider span:nth-child(1) {
+  color: white;
+}
+
+/* HERO  */
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.i-am {
+  color: #80808D;
+  display: block;
+}
+
+.hero-left h1 {
+  letter-spacing: 1px;
+  font-size: 40px;
+}
+
+.divider {
+  width: 100px;
+  height: 2px;
+  background: #FFBA17;
+}
+
+.hero-left p {
+  color: #7D7D89;
+  font-size: 13px;
+}
+
+.hero-right {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.hero-right h4 {
+  color: #a9abb9;
+}
+
+.hero-right p {
+  color: #7D7D89;
+}
+
+.hero-right a {
+  text-decoration: none;
+  color: #FFBA17;
+}
+
+.social-icons {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.social-icons img {
+  height: 22px;
+}
+
+/* ADAM PIC + CIRCLE */
+.adam-pic {
+  position: relative;        /* circle ka anchor */
+  display: flex;
+  justify-content: center;
+  height: 280px;             /* image ki height ke barabar */
+}
+
+.adam-pic img {
+  height: 300px;
+  position: relative;
+  z-index: 1;                /* circle ke upar */
+}
+
+.circle {
+  position: absolute;        /* adam-pic ke andar absolute */
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: #2D2D39;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;                /* image ke peeche */
+}
+
+/* ── LOGO BAR ── */
+.logo-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  background-color: #3F404F;
+  padding: 20px;
+  width: 90%;
+  margin: 20px auto 0;      
+}
+
+.logo-bar div {
+  background-color: #353541;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+}
+
+.meta     { height: 120px; object-fit: contain; }
+.google   { height: 60px; object-fit: contain; }
+.linkedin { height: 40px; object-fit: contain; }
+.slack    { height: 120px; object-fit: contain; }
+
+/* BOTTOM */
+.bottom {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 20px;
+  gap: 60px;
+  background-color: #282832;
+}
+
+.bottom-left {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.bottom-left p {
+  color: #8c8ea0;
+}
+
+.bottom-left h4 {
+  color: #FFBA17;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.bottom-right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.skills {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.skills div {
+  flex: 1;
+  text-align: left;
+}
+
+
+.skills img {
+  width: 100px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.arrow {
+  color: #FFBA17;
+}
+
+/* ── SERVICE CARDS ── */
+.service-cards {
+  padding: 24px;
+  background-color: #282832;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px 24px;
+  background-color: #3F404F;
+  margin-top: 20px;
+}
+
+.service-card img {
+  height: 30px;
+  width: 30px;
+}
+
+.service-card h4 {
+  font-size: 20px;
+}
+
+.service-card p {
+  font-size: 15px;
+  color: #80808D;
+}
+
+.service-card a {
+  color: #FFBA17;
+  text-decoration: none;
+}
