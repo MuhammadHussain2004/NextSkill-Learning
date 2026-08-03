@@ -1,0 +1,9 @@
+[submodule "Assignment02-Adams-Portfolio"]
+	path = Assignment02-Adams-Portfolio
+	url = https://github.com/MuhammadHussain2004/adams-portfolio.git
+	branch = main
+
+[submodule "Assignment03-Expense-Tracker"]
+	path = Assignment03-Expense-Tracker
+	url = https://github.com/MuhammadHussain2004/Expense-Tracker.git
+	branch = main
