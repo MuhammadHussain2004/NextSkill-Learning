@@ -7,3 +7,8 @@
 	path = Assignment03-Expense-Tracker
 	url = https://github.com/MuhammadHussain2004/Expense-Tracker.git
 	branch = main
+
+[submodule "task-01"]
+	path = task-01
+	url = https://github.com/MuhammadHussain2004/React-design-practice.git
+	branch = main
