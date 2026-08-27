@@ -1,5 +1,6 @@
 import { useEffect, useState  } from "react";
 import { useNavigate } from "react-router-dom";
+import { API_BASE_URL } from "../config";
 
 const Home = ()=>{
     const navigate = useNavigate();
@@ -15,7 +16,7 @@ const Home = ()=>{
 
      const fetchProfile =async ()=>{
         try{
-            const res= await fetch('http://localhost:4000/api/auth/profile', {
+            const res= await fetch(`${API_BASE_URL}/api/auth/profile`, {
                 headers: {Authorization: `Bearer ${token}`},
             })
             const data= await res.json()

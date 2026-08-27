@@ -2,11 +2,19 @@ const fs = require('fs/promises');
 const path= require('path');
 const bcrypt = require('bcrypt');
 
-const filePath = path.join(process.cwd(), 'data', 'users.json');
+const seedPath = path.join(__dirname, '..', 'data', 'users.json');
+const filePath = process.env.VERCEL ? path.join('/tmp', 'users.json') : seedPath;
 
 const readUsers = async ()=> {
-    const fileData = await fs.readFile(filePath , 'utf-8');
-    return JSON.parse(fileData);
+    try {
+        const fileData = await fs.readFile(filePath , 'utf-8');
+        return JSON.parse(fileData);
+    } catch (err) {
+        if (err.code !== 'ENOENT') throw err;
+        if (filePath === seedPath) return [];
+        const seedData = await fs.readFile(seedPath, 'utf-8');
+        return JSON.parse(seedData);
+    }
 };
 
 const writeUsers = async (users)=>{
