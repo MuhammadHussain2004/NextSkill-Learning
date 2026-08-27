@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to task-02 👋</h1>
+<h1 align="center">Welcome 👋</h1>
 <p>
 </p>
 
