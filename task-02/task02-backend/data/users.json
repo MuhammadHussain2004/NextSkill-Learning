@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1787649254414,
+    "name": "Test User",
+    "username": "testuser1",
+    "email": "test@test.com",
+    "birthday": "2000-01-01",
+    "password": "$2b$12$fVP3o.Bs7q9ztdGZFhQNwuWiH/FXF1T4Kc2/IFoMob4P174lnN29G"
+  },
+  {
+    "id": 1787759976641,
+    "name": "Muhammad Hussain Khan Lodhi",
+    "username": "M_Hussain",
+    "email": "mhkplayer14@gmail.com",
+    "birthday": "${month}-${day}-${year}",
+    "password": "$2b$12$4Vbo3Ga8WSlB3VK.kh58Fup4fwhtEnLo0YcF5xbBDkZyRUql.rF2u"
+  },
+  {
+    "id": 1787760465410,
+    "name": "khan sahab",
+    "username": "lodhi16",
+    "email": "khanlodhi@gmail.com",
+    "birthday": "${month}-${day}-${year}",
+    "password": "$2b$12$dSgzvqgHwkWXyHU58gQUNeypWX8m1pfi2eh.mLLdhPzmESUsPsrrS"
+  }
+]

@@ -1,0 +1,62 @@
+.signup{
+    width: 50%;
+    margin: auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 50px;
+  width: 80%;
+  justify-content: center;
+  align-items: start;
+}
+
+.head {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+input,
+select,
+button {
+  width: 90%;
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.combo {
+  display: flex;
+  gap: 10px;
+  width: 95%;
+}
+ 
+.btn{
+    width: 100%;
+}
+
+.btn button {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: blue;
+  border: none;
+  border-radius: 100px;
+  color: white;
+  padding: 15px 0;
+}
+
+.btn button:first-child{
+    background-color: #0064E0;
+}
+
+.btn button:last-child{
+    background-color: rgb(163, 161, 161);
+}
