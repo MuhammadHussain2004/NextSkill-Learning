@@ -12,3 +12,8 @@
 	path = task-01
 	url = https://github.com/MuhammadHussain2004/React-design-practice.git
 	branch = main
+
+[submodule "Assignment05-ecommerce-web"]
+	path = Assignment05-ecommerce-web
+	url = https://github.com/MuhammadHussain2004/shopco-ecommerce.git
+	branch = main
